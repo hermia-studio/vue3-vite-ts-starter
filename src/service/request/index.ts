@@ -113,7 +113,7 @@ class HWRequest {
   }
 
   // request函数
-  request<T>(config: HWRequestConfig): Promise<T> {
+  request<T>(config: HWRequestConfig<T>): Promise<T> {
     return new Promise((resolve, reject) => {
       // 对单个请求进行拦截
       if (config.interceptors?.requestInterceptor) {
@@ -143,19 +143,19 @@ class HWRequest {
     })
   }
 
-  get<T>(config: HWRequestConfig): Promise<T> {
+  get<T>(config: HWRequestConfig<T>): Promise<T> {
     return this.request<T>({ ...config, method: 'GET' })
   }
 
-  post<T>(config: HWRequestConfig): Promise<T> {
+  post<T>(config: HWRequestConfig<T>): Promise<T> {
     return this.request<T>({ ...config, method: 'POST' })
   }
 
-  delete<T>(config: HWRequestConfig): Promise<T> {
+  delete<T>(config: HWRequestConfig<T>): Promise<T> {
     return this.request<T>({ ...config, method: 'DELETE' })
   }
 
-  patch<T>(config: HWRequestConfig): Promise<T> {
+  patch<T>(config: HWRequestConfig<T>): Promise<T> {
     return this.request<T>({ ...config, method: 'PATCH' })
   }
 }

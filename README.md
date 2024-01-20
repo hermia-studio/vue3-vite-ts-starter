@@ -27,45 +27,9 @@ A Vue 3.x +Vite 5.x + TypeScript + Vue Router + Pinia + Axios + ESLint template 
 
 ## 快速开始
 ### 获取项目
->本地
-- 新建空文件夹
-- 右击使用Git Bash打开文件夹，git init初始化仓库
-- 配置用户名和邮箱
+- 使用 Git
 ```
-git config  user.name "你的名字（一定要是英文的）"
-git config  user.email "你的邮箱"
-```
-- 创建SSH密钥对
-```
-ssh-keygen -t rsa -C 邮箱名
-// 如果不需要设置密码，可以直接按Enter键
-```
-- 之后就会在用户主目录下的.ssh文件夹中生成以下两个文件：
-id_rsa、id_rsa.pub；其中id_rsa为私钥，id_rsa.pub为公钥
-- 打开id_rsa.pub，复制内容，将公钥内容粘贴到自己github/Gitee的设置中
-- 将自定义路径的私钥添加到ssh秘钥搜索列表中
-```
-//连接认证agent（身份验证代理）
-ssh-agent bash
-//修改私钥路径
-ssh-add ~/.ssh/id_rsa
-```
-- 测试本机能否与github/gitee使用ssh通信
-```
-ssh -T git@github.com
-//ssh返回 “……successfully ……”，这表示可以与远程愉快的通信了
-```
-- 修改本地仓库主分支的命名
-```
-git branch -m master main
-```
-- 本地仓库与GitHub远程仓库进行关联
-```
-git remote add origin git@github.com:hermia-studio/vue3-vite-ts-starter.git
-```
-- 将远程仓库拉取到本地
-```
-git pull origin main
+git clone https://github.com/hermia-studio/vue3-vite-ts-starter.git
 ```
 
 ### 安装依赖
