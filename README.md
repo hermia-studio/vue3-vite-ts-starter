@@ -95,7 +95,7 @@ npm run build
 - 提交详细的描述信息(比上一步更详细的信息)
 - 选择 是否是一次重大的更改
 - 选择 是否影响某个open issue(开源项目)
-
+- 提交到远程仓库`git push origin main`
 
 ### 使用ESLint
 
